@@ -1,0 +1,23 @@
+You are given a string that contains only lowercase and uppercase alphabets.
+ ii. You have to toggle the case of every character of the given string.
+For eg - CoEdify -→ cOeDIFY
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="cOeDIFY";
+	    for(int i=0;i<str.length();i++)
+	    {
+	        char ch=str.charAt(i);
+	        if(Character.isUpperCase(ch))
+	        {
+	            System.out.print(Character.toLowerCase(ch));
+	        }
+	        else{
+	            System.out.print(Character.toUpperCase(ch));
+	        }
+	    }
+		//System.out.println("Hello World");
+	}
+}
