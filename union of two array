@@ -1,0 +1,46 @@
+Write a Program to find Union of Two Arrays.
+
+
+
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int arr1[]={1,3,4,5,7};
+	    int arr2[]={2,3,5,6};
+	    int l1=arr1.length;
+	    int l2=arr2.length;
+	    int i=0,j=0;
+	    while( i<l1 && j<l2)
+	    {
+	        if(arr1[i]<arr2[j])
+	        {
+	            System.out.print(arr1[i]+" ");
+	            i++;
+	        }
+	        else if(arr2[j]<arr1[i])
+	        {
+	            System.out.print(arr2[j]+" ");
+	            j++;
+	        }
+	        else{
+	            System.out.print(arr1[i]+" ");
+	            i++;
+	            j++;
+	        }
+	    }
+	    while (i < l1){
+            System.out.print(arr1[i] + " ");
+            i++;
+	    }
+        while (j < l2){
+            System.out.print(arr2[j] + " ");
+            j++;
+        }
+	    
+	        
+	    
+	}
+}
